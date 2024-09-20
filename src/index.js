@@ -4,7 +4,7 @@ const server = require('./core/server');
 
 const app = server.listen(port, (err) => {
   if (err) {
-    logger.fatal(err, 'Failed to start the server.');
+    logger.fatal(err, 'Faileed to start the server.');
     process.exit(1);
   } else {
     logger.info(`Server runs at port ${port} in ${env} environment`);
